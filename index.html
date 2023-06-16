@@ -89,6 +89,8 @@
             --fb-blue: #4267B2;
             --insta-pink:#c13584;
             --twitter-blue:#1da1f2;
+            --medium-ash: #faf9f9;
+            --youtube-red: #FF0000;
         }
 
         * {
@@ -151,6 +153,14 @@
             color: var(--twitter-blue);
         }
 
+        .social-links a .fa-medium:hover {
+            color: var(--medium-ash);
+        }
+
+        .social-links a .fa-youtube:hover {
+            color: var(--youtube-red);
+        }
+
         header>img{
             margin-top: -150px;
             margin-left: -273px;
@@ -174,7 +184,7 @@
             width: 100%;
             height: 100%;
             padding: 0;
-            margin: 0;
+            /*margin: 0;*/
         }
 
         body {
@@ -381,12 +391,16 @@
 
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin logos"></i></a>
+            <a href="https://www.linkedin.com/in/chamod-dinuranga-a24171230/"><i class="fab fa-linkedin logos"></i></a>
             <a href="#"><i class="fab fa-github logos"></i></a>
             <a href="#"><i class="fab fa-facebook logos"></i></a>
+
             <a href="https://www.instagram.com/d_o_n_chamod/">
                 <i class="fab fa-instagram logos"></i></a>
+
             <a href="#"><i class="fab fa-twitter logos"></i></a>
+            <a href="#"><i class="fab fa-medium logos"></i></a>
+            <a href="#"><i class="fab fa-youtube logos"></i></a>
         </div>
     </footer>
 </main>
@@ -461,5 +475,4 @@
         nav.style.setProperty('--after-bg-width', width);
     }));</script>
 </body>
-</head>
 </html>
