@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignments</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            width: 100vw;
+            text-align: center;
+            padding-top: 10px;
+            background-color: #2b6777;
+        }
+
+        /* CONTAINER FOR ALL CARDS */
+        .cards-container {
+            width: 100%;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* ALL CARDS  */
+        .flip-card {
+            width: 230px;
+            height: 230px;
+            border-radius: 20px;
+            perspective: 1000px;
+            background-color: transparent;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card:hover {
+            cursor: pointer;
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        /* CONTENT STYLING */
+        .flip-card-front,
+        .flip-card-back {
+            display: grid;
+            place-items: center;
+        }
+
+        .flip-card-front {
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(151, 149, 149, 0.466);
+            border-radius: 10px;
+        }
+
+        .flip-card-back {
+            background-color: #191e24;
+            transform: rotateY(180deg);
+            box-shadow: 10px 10px 10px lightgray;
+            border-radius: 10px;
+        }
+
+        .flip-card-front img {
+            width: 90%;
+            background-size: cover;
+        }
+
+        .flip-card-back h3 {
+            color: #f1c40f;
+        }
+
+        /* End CSS */
+
+        .card-4 img {
+            width: 70%;
+        }
+
+        footer {
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+<h2>More Web Projects By me</h2>
+<!-- CARD CONTAINER -->
+<div class="cards-container">
+    <!-- CARD 1 -->
+    <a href="assignments/Assignment_10_Calculator/index.html"><div class="card-1 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img
+                        src="assests/images/WebCalculator.png"
+                        alt=""
+                />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>just click to view project</h3>
+            </div>
+        </div>
+    </div>
+    </a>
+    <!-- CARD 2 -->
+    <div class="card-2 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.postimg.cc/MHRbWzZT/Tow-Mater.png" alt="" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Tow Mater</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card-3 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.ibb.co/nzbTt1R/Sarge.png" alt="Sarge" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Sarge</h3>
+            </div>
+        </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="card-4 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.ibb.co/n3QQVsd/Fillmore.png" alt="Fillmore" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Fillmore</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 1 -->
+    <div class="card-1 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img
+                        src="https://i.postimg.cc/tTsNMhLF/Lightning-Mc-Queen.png"
+                        alt=""
+                />
+                <h3>
+                    web calculator
+                </h3>
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Lightning McQueen</h3>
+            </div>
+        </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="card-2 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.postimg.cc/MHRbWzZT/Tow-Mater.png" alt="" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Tow Mater</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card-3 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.ibb.co/nzbTt1R/Sarge.png" alt="Sarge" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Sarge</h3>
+            </div>
+        </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="card-4 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.ibb.co/n3QQVsd/Fillmore.png" alt="Fillmore" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Fillmore</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card-4 flip-card">
+        <div class="flip-card-inner">
+            <!-- FRONT -->
+            <div class="flip-card-front">
+                <img src="https://i.ibb.co/n3QQVsd/Fillmore.png" alt="Fillmore" />
+            </div>
+            <!-- BACK -->
+            <div class="flip-card-back">
+                <h3>Fillmore</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
