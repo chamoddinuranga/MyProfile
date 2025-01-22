@@ -1,0 +1,3 @@
+[submodule "assignments/MyWebCalculator"]
+	path = assignments/MyWebCalculator
+	url = https://github.com/chamoddinuranga/MyWebCalculator.git
